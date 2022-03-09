@@ -1,6 +1,73 @@
+:root {
+    --nvidia-original: #76b900;
+    --bg: #fefee2;
+    --black_text:#373D3F;
+}
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
+
+  .container {
+    width: 1400px;
+    margin: auto; 
+  }
+
+  .navbar_menu {
+      width: 1200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+  }
+
+  .navbar_menu ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-between;
+  }
+
+  .navbar_menu li a {
+      display: flex;
+      text-decoration: none;
+      color: var(--black_text);
+      font-weight: bold;
+  }
+
+.cover_img {
+    width: 100%;
+   
+    z-index: 0;
+
+}
+
+
+.cover_bottom {
+    display: flex;
+    position: absolute;
+    bottom: 0 ;
+    z-index: 1;
+    color: aliceblue;
+    background-color: #76b900;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cover {
+    position: relative;
+}
+
+.lol{
+    background-color: antiquewhite;
+}
+
+.lol2{
+    background-color:aquamarine;
+}
+
+.div1{
+    display: flex;
+}
+  
