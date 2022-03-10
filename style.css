@@ -1,73 +1,139 @@
 :root {
     --nvidia-original: #76b900;
     --bg: #fefee2;
-    --black_text:#373D3F;
+    --black_text: #373D3F;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
+}
 
-  .container {
-    width: 1400px;
-    margin: auto; 
-  }
+.container {
+    width: 1200px;
+    margin: auto;
+}
 
-  .navbar_menu {
-      width: 1200px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-  }
 
-  .navbar_menu ul {
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      justify-content: space-between;
-  }
+/* ----------------------------------   NAVBAR */
+#logo {
+    align-items: flex-start;
+    position: relative;
+    top: 22px;
+}
 
-  .navbar_menu li a {
-      display: flex;
-      text-decoration: none;
-      color: var(--black_text);
-      font-weight: bold;
-  }
+nav ul {
+    width: 1200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    gap: 80px;
+    margin-bottom: 15px;
+}
 
+
+nav li a {
+    text-decoration: none;
+    color: var(--black_text);
+    font-weight: bold;
+}
+
+
+/* ------------------------------------  COVER */
 .cover_img {
     width: 100%;
-   
-    z-index: 0;
-
 }
-
 
 .cover_bottom {
+    position: relative;
+    top: -47px;
     display: flex;
-    position: absolute;
-    bottom: 0 ;
-    z-index: 1;
     color: aliceblue;
-    background-color: #76b900;
+    background-color: #5e94006d;
     width: 100%;
     justify-content: space-between;
+    padding: 10px 0 10px 5px;
 }
 
-.cover {
-    position: relative;
+.cover_bottom p {
+    font-weight: bold;
 }
 
-.lol{
+.btn-cover {
+    display: block;
+    width: 90px;
+    line-height: 25px;
+    background-color: var(--nvidia-original);
+    color: white;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* -------------------------------------  MAIN */
+main {
+    display: flex;
+}
+
+/* ----------------------------------  ARTICLE */
+article {
+    width: 838px;
+    padding-right: 15px;
+}
+
+article p {
+    margin-top: 20px;
+}
+
+#icon-h1 {
+    width: 30px;
+    border: solid 1px var(--black_text);
+    border-radius: 5px;
+}
+
+
+
+/* ------------------------------------  ASIDE */
+
+
+.propos {
+    width: 357px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nvidia-original);
+    align-items: center;
+    margin-right: 0;
+}
+
+.images-aside {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------   TEST */
+.lol {
     background-color: antiquewhite;
 }
 
-.lol2{
-    background-color:aquamarine;
+.lol2 {
+    background-color: aquamarine;
 }
 
-.div1{
+.div1 {
     display: flex;
 }
-  
