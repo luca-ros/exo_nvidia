@@ -72,7 +72,7 @@ nav li a {
     color: white;
     font-size: 15px;
     margin-right: 10px;
-
+    cursor: pointer;
     border-radius: 5px;
 }
 
@@ -138,7 +138,7 @@ article p {
 
 .propos p {
     padding: 30px 15px 0 15px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: var(--bg);
 }
@@ -156,7 +156,7 @@ article p {
     position: relative;
     height: 3px;
     top: -33px;
-    right: 5px;
+    right: 0px;
 }
 
 /* ------------------------------------  GREEN TRIANGLE*/
@@ -191,19 +191,20 @@ section h3 {
 }
 
 .btn-news {
-    display: block;
     width: 90px;
     line-height: 25px;
     background-color: var(--nvidia-original);
     color: white;
     font-size: 15px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 footer img {
     width: 100px;
     height: 100px;
     cursor: pointer;
+    box-flex-group: var(--bg);
 }
 
 
