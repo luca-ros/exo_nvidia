@@ -151,12 +151,15 @@ article p {
 }
 
 /* ------------------------------------  GREEN LINE*/
+.green-line-container {
+    display: flex;
+    background-color: aquamarine;
+    position: relative;
+    top: -30px;
+}
 .green-line {
     background-color: var(--nvidia-original);
-    position: relative;
-    height: 3px;
-    top: -33px;
-    right: 0px;
+    
 }
 
 /* ------------------------------------  GREEN TRIANGLE*/
@@ -164,8 +167,8 @@ article p {
     margin: 0 auto;
     width: 0px;
     height: 0px;
-    border-left: 20px solid var(--bg);
-    border-right: 20px solid var(--bg);
+    border-left: 30px solid var(--bg);
+    border-right: px solid var(--bg);
     border-bottom: 20px solid var(--bg);
     border-top: 20px solid var(--nvidia-original);
 }
