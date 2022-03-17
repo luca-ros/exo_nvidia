@@ -12,27 +12,31 @@
 }
 
 .container {
-    width: 1200px;
+    /* 1400px */
+    width: 1200px;   
     margin: auto;
 }
 
 
 /* ----------------------------------   NAVBAR */
-#logo {
+/* #logo {
     align-items: flex-start;
     position: relative;
     top: 22px;
+} */
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    
 }
 
-
-nav ul {
-    width: 1200px;
+ul  {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    margin: 0 auto;
     list-style: none;
     gap: 80px;
-    margin-bottom: 15px;
 }
 
 
@@ -44,19 +48,26 @@ nav li a {
 
 
 /* ------------------------------------  COVER */
+
+.cover{
+    position: relative;
+    vertical-align: bottom;
+}
 .cover_img {
     width: 100%;
+    vertical-align: bottom;
+    /* position: relative; */
 }
 
 .cover_bottom {
-    position: relative;
-    top: -53px;
+    position: absolute;
+    bottom:0;
     display: flex;
     color: aliceblue;
     background-color: #5e94006d;
-    width: 100%;
     justify-content: space-between;
     padding: 10px 0 10px 5px;
+    width: 100%;
 
 }
 
@@ -107,14 +118,15 @@ article p {
 }
 
 
-
+main {
+    background-color: bisque;
+}
 
 /* ------------------------------------  ASIDE */
 
 
 .propos {
-    position: relative;
-    top: -30px;
+    /* position: relative; */
     width: 357px;
     display: flex;
     flex-direction: column;
@@ -153,7 +165,7 @@ article p {
 
 /* ------------------------------------  GREEN LINE*/
 .green-line-container {
-    position: relative;
+    
     top: -30px;
     border-top: solid 3px var(--nvidia-original);
 }
@@ -165,7 +177,7 @@ article p {
 
 /* ------------------------------------  GREEN TRIANGLE*/
 .trg {
-    position: relative;
+    
     bottom: 2px;
     margin: 0 auto;
     width: 0px;
@@ -179,6 +191,7 @@ article p {
 
 /* ------------------------------------  FOOTER*/
 footer {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -189,10 +202,16 @@ section h3 {
 
 
 input {
-    margin:5px 0;
+    margin:10px 0 0 0;
     padding: 5px;
     font-size: large;
     border-color: var(--border-input)
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 .inputs {
@@ -201,12 +220,14 @@ input {
 }
 
 .btn-news {
+    
     width: 90px;
-    line-height: 25px;
+    height: 35px;
+    line-height: 35px;
     background-color: var(--nvidia-original);
     color: white;
     font-size: 15px;
-    margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -219,21 +240,45 @@ footer img {
 
 
 /* ------------------------------------  @media */
+@media (max-width: 1200px) {
+    .container, nav {
+        width: 100%;
+    }
+ }
 
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {};
 
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {};
+ /* Medium devices (tablets, 768px and less) */
+@media (max-width: 768px) {
 
- /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {};
+    .container{
+        width: 100%;
+    }   
+};
 
- /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {};
 
- /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {};
+ /* Small devices (landscape phones, 576px and less) */
+@media (max-width: 576px) {
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+};
+
+
+
+
+
+.carre{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    z-index: 1000;
+    /* position: relative; */
+    /* left: 10rem; */
+}
+
 
 
 
