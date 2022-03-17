@@ -93,12 +93,14 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 3px solid #76b900;
+    margin-top: 30px;
 }
 
 /* ----------------------------------  ARTICLE */
 article {
     width: 838px;
-    padding-right: 15px;
+    padding: 20px;
 }
 
 #icon-h1 {
@@ -118,9 +120,6 @@ article p {
 }
 
 
-main {
-    background-color: bisque;
-}
 
 /* ------------------------------------  ASIDE */
 
@@ -130,6 +129,7 @@ main {
     width: 357px;
     display: flex;
     flex-direction: column;
+    height: 100%;
     background-color: var(--nvidia-original);
     align-items: center;
     margin-right: 0;
@@ -164,21 +164,19 @@ main {
 }
 
 /* ------------------------------------  GREEN LINE*/
-.green-line-container {
+/* .green-line-container {
     
     top: -30px;
     border-top: solid 3px var(--nvidia-original);
-}
+} */
 
-.green-line {
+/* .green-line {
     background-color: var(--nvidia-original);
     
-}
+} */
 
 /* ------------------------------------  GREEN TRIANGLE*/
 .trg {
-    
-    bottom: 2px;
     margin: 0 auto;
     width: 0px;
     height: 0px;
@@ -238,6 +236,16 @@ footer img {
     box-flex-group: var(--bg);
 }
 
+.galerie {
+    margin-right: 4rem;
+}
+
+.combo {
+    display: flex;
+    
+
+}
+
 
 /* ------------------------------------  @media */
 @media (max-width: 1200px) {
@@ -252,7 +260,45 @@ footer img {
 
     .container{
         width: 100%;
-    }   
+        
+    }  
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    main {
+        flex-direction: column;
+    }
+    .propos{
+       width: 100%; 
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+    }
+    .news-letter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        text-align: center;
+        padding: 4rem;
+    }
+    .inputs {
+        width: 100%;
+    }
+
+    input {
+        width: 500px;
+        margin-top: 20px;
+
+    }
+
 };
 
 
