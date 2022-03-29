@@ -291,8 +291,8 @@ footer img {
         width: 450px;
         text-align: center;
         padding: 4rem;
-        background-color: aquamarine;
     }
+
 
     .inputs {
         width: 100%;
@@ -307,7 +307,6 @@ footer img {
     .combo {
         gap: 30px;
         width: 450px;
-        background-color: aqua;
     }
 
     .combo section h3 {
