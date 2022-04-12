@@ -24,7 +24,7 @@ nav {
 
 }
 
-ul {
+.wrap_links {
     display: flex;
     margin: 0 auto;
     list-style: none;
@@ -32,7 +32,7 @@ ul {
 }
 
 
-nav li a {
+nav a {
     text-decoration: none;
     color: var(--black_text);
     font-weight: bold;
@@ -167,6 +167,7 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 section h3 {
@@ -203,12 +204,16 @@ form {
     cursor: pointer;
 }
 
+
 footer img {
     width: 90px;
     height: 90px;
     cursor: pointer;
     box-flex-group: var(--bg);
 }
+
+
+
 
 .galerie {
     margin-right: 4rem;
@@ -243,13 +248,10 @@ footer img {
 
     }
 
-    ul {
+    .wrap_links {
         flex-direction: column;
         gap: 7px;
         align-items: center;
-    }
-
-    ul li a {
         color: var(--nvidia-original);
     }
 
@@ -269,11 +271,12 @@ footer img {
         font-size: 1.5rem;
     }
 
+
+
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     form {
