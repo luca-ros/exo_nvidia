@@ -24,6 +24,10 @@ nav {
 
 }
 
+nav :first-child {
+    margin-left: 5px;
+}
+
 .wrap_links {
     display: flex;
     margin: 0 auto;
