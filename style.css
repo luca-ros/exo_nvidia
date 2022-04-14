@@ -1,6 +1,6 @@
 :root {
     --nvidia-original: #76b900;
-    --bg: #fefee2;
+    --bg: #ffffff;
     --black_text: #373D3F;
     --border-input: rgb(219, 212, 212)
 }
@@ -17,6 +17,12 @@
 }
 
 /* ----------------------------------   NAVBAR */
+.logo {
+    padding-left: 5px;
+}
+
+
+
 nav {
     display: flex;
     align-items: flex-end;
@@ -24,9 +30,6 @@ nav {
 
 }
 
-nav :first-child {
-    margin-left: 5px;
-}
 
 .wrap_links {
     display: flex;
@@ -34,7 +37,6 @@ nav :first-child {
     list-style: none;
     gap: 80px;
 }
-
 
 nav a {
     text-decoration: none;
@@ -121,10 +123,13 @@ article {
 article h1 {
     font-size: 1.8rem;
     text-transform: uppercase;
+    
 }
 
+
+
 article p {
-    margin-top: 20px;
+    padding-top: 20px;
     font-size: 1.4rem;
 }
 
@@ -136,7 +141,7 @@ article p {
     height: 100%;
     background-color: var(--nvidia-original);
     align-items: center;
-    margin-right: 0;
+    padding: 20px;
 }
 
 .images-aside {
@@ -148,12 +153,9 @@ article p {
     color: var(--bg);
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 30px;
 }
 
 .propos p {
-    padding: 30px 15px 0 15px;
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--bg);
@@ -163,7 +165,7 @@ article p {
 .socials {
     display: flex;
     gap: 28px;
-    margin: 60px 0 30px 0;
+    padding: 60px 0 30px 0;
 }
 
 /* ------------------------------------  FOOTER*/
@@ -171,7 +173,7 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 section h3 {
@@ -179,8 +181,7 @@ section h3 {
 }
 
 input {
-    margin: 10px 0 0 0;
-    padding: 5px;
+    
     font-size: large;
     border-color: var(--border-input)
 }
@@ -203,8 +204,7 @@ form {
     background-color: var(--nvidia-original);
     color: white;
     font-size: 15px;
-    margin-left: 10px;
-    margin: 0 10px 0 10px;
+  
     cursor: pointer;
 }
 
@@ -217,11 +217,6 @@ footer img {
 }
 
 
-
-
-.galerie {
-    margin-right: 4rem;
-}
 
 .combo {
     display: flex;
