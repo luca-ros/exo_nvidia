@@ -173,11 +173,12 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
+    padding: 20px ;
 }
 
 section h3 {
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 
 input {
@@ -197,6 +198,10 @@ form {
     flex-direction: column;
 }
 
+input {
+    height: ;
+}
+
 .btn-news {
     width: 90px;
     height: 35px;
@@ -204,7 +209,6 @@ form {
     background-color: var(--nvidia-original);
     color: white;
     font-size: 15px;
-  
     cursor: pointer;
 }
 
@@ -213,7 +217,6 @@ footer img {
     width: 90px;
     height: 90px;
     cursor: pointer;
-    box-flex-group: var(--bg);
 }
 
 
@@ -290,7 +293,6 @@ footer img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 450px;
         text-align: center;
         padding: 4rem;
     }
