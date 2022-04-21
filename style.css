@@ -9,6 +9,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+}
+
+/* important !!! */
+img {
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 .container {
@@ -18,12 +26,12 @@
 
 /* ----------------------------------   NAVBAR */
 .logo {
-    padding-left: 5px;
+    padding: 10px 10px 0 10px;
+    width: 6rem;
+    height: auto;
 }
 
-
-
-nav {
+header nav {
     display: flex;
     align-items: flex-end;
     margin-bottom: 1rem;
@@ -31,14 +39,14 @@ nav {
 }
 
 
-.wrap_links {
+.wrap_navbar {
     display: flex;
     margin: 0 auto;
     list-style: none;
     gap: 80px;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
     color: var(--black_text);
     font-weight: bold;
@@ -121,12 +129,25 @@ article {
 }
 
 article h1 {
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    
+    display: none;
 }
 
+article h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
 
+}
+
+.titre {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.titre figure {
+    width: 5%;
+    margin-right: 5px;
+}
 
 article p {
     padding-top: 20px;
@@ -147,6 +168,8 @@ article p {
 .images-aside {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    margin-top: 8%;
 }
 
 .propos h2 {
@@ -156,6 +179,7 @@ article p {
 }
 
 .propos p {
+    padding-top: 15px;
     font-size: 1.3rem;
     font-weight: bold;
     color: var(--bg);
@@ -164,8 +188,15 @@ article p {
 /* ------------------------------------  ASIDE-SOCIALS LINKS*/
 .socials {
     display: flex;
+    justify-content: center;
     gap: 28px;
-    padding: 60px 0 30px 0;
+    font-size: 2rem;
+    padding-top: 12%;
+
+}
+
+.socials i {
+    color: white;
 }
 
 /* ------------------------------------  FOOTER*/
@@ -173,8 +204,13 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 20px ;
+    padding: 20px;
 }
+
+footer section {
+    width: 33%;
+}
+
 
 section h3 {
     text-transform: uppercase;
@@ -182,30 +218,29 @@ section h3 {
 }
 
 input {
-    
+
     font-size: large;
-    border-color: var(--border-input)
+    border-color: var(--border-input);
+    margin-bottom: 10px;
+
+
+}
+
+.inputs-text-email :first-child {
+    margin-bottom: 10px;
 }
 
 form {
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-}
-
-.inputs {
-    display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    height: 90px;
 }
 
-input {
-    height: ;
-}
 
-.btn-news {
+#btn-news {
     width: 90px;
-    height: 35px;
-    line-height: 35px;
+    height: 25px;
     background-color: var(--nvidia-original);
     color: white;
     font-size: 15px;
@@ -219,13 +254,6 @@ footer img {
     cursor: pointer;
 }
 
-
-
-.combo {
-    display: flex;
-}
-
-
 /* ------------------------------------  @media */
 @media (max-width: 1200px) {
 
@@ -235,22 +263,18 @@ footer img {
     }
 }
 
-@media (max-width: 1174px) {
-    
-   .combo, .news-letter {
-       flex-direction: column;
-   }
+@media (max-width: 1056px) {
+
+    .container {
+        width: 100%;
+    }
 }
 
 /* Medium devices (tablets, 768px and less) */
 @media (max-width: 768px) {
 
-    .container {
-        width: 100%;
 
-    }
-
-    .wrap_links {
+    .wrap_navbar {
         flex-direction: column;
         gap: 7px;
         align-items: center;
@@ -273,100 +297,47 @@ footer img {
         font-size: 1.5rem;
     }
 
-
-
     footer {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-
-    }
-
-    .news-letter {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 4rem;
-    }
-
-
-    .inputs {
+    .news-letter,
+    .galerie,
+    .partenaires {
         width: 100%;
     }
 
-    input {
-        width: 450px;
-        margin-top: 20px;
+    .inputs-text-email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
     }
 
-    .combo {
-        gap: 30px;
-        width: 450px;
-    }
-
-    .combo section h3 {
+    footer h3 {
         text-align: center;
     }
 
-   
+    article p {
+        font-size: 1.2rem;
+    }
 
-   
-    
+    article h2 {
+        font-size: 1.2rem;
+    }
+
+    .propos p {
+        font-size: 1.1rem;
+    }
+
 }
 
-
-
-/* Small devices (landscape phones, 576px and less)
+/* Small devices (landscape phones, 576px and less) */
 @media (max-width: 576px) {
-    
-    
-};
- */
+    .logo-h1 {
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------   TEST */
-
-
-
-.parents {
-    display: flex;
-    margin-top: 100px;
 }
 
-.fils-1 {
-    background-color: rgb(230, 192, 142);
-}
-
-.fils-2 {
-    background-color: aquamarine;
-}
-
-.fils-3 {
-    background-color: cornflowerblue;
-}
+;

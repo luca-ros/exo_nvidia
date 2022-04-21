@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Nvidia</title>
 </head>
@@ -17,7 +18,7 @@
                 <figure class="logo">
                     <a href="index.html"><img src="assets/01-nvidia-logo.jpg" alt="logo-nvidia"></a>
                 </figure>
-                <div class="wrap_links">
+                <div class="wrap_navbar">
                     <a href="#">PRODUITS</a>
                     <a href="#">GAMME RTX</a>
                     <a href="#">SUPPORT & PILOTES</a>
@@ -34,15 +35,16 @@
                     <p>Plus d'information sur la gamme GeForce RTX</p>
                     <button class="btn-cover">Découvrir &#9656; </button>
                 </div>
-
             </div>
         </header>
-
         <main>
-
             <article>
-                <span class="logo-h1"></span>
-                <h1> la puissance, tout simplement.</h1>
+                <div class="titre">
+                    <figure class="logo-h1"><img src="assets/h1-logo.png" alt="petit logo nvidia"></figure>
+                    <!-- <h1> pour CEO!  css hide with: display none -->
+                    <h1> Rtx GeForce Nvidia meilleur choix </h1>
+                    <h2> la puissance, tout simplement.</h2>
+                </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae corrupti exercitationem tenetur odio ea
                     perferendis.
                     Voluptatem exercitationem veritatis aspernatur perferendis quidem omnis eos amet magni, atque
@@ -67,16 +69,14 @@
                 </p>
 
             </article>
-
-            <aside>
-
-                <div class="propos">
+            <section>
+                <!-- inside est une information complementaire -->
+                <aside class="propos">
                     <h2>A propos</h2>
                     <figure class="images-aside">
                         <img src="assets/prop-top.png" alt="logo nvidia1">
                         <img src="assets/prop-under.png" alt="logo nvidia2">
                     </figure>
-
                     <p>Lorem, Similique tenetur dolore voluptas eligendi, sint atque quod
                         necessitatibus iste, vitae, nemo eveniet ea temporibus quibusdam.
                         <br><br>
@@ -86,64 +86,56 @@
                         sint quae maiores laudantium
                         dolorum dicta odio dolore. Dolorum, distinctio!
                     </p>
-
-                    <figure class="socials">
-                        <a href=""><img src="assets/social-links/Facebook - Negative.png" alt="link-facebook"></a>
-                        <a href=""><img src="assets/social-links/Twitter - Negative.png" alt="link-twitter"></a>
-                        <a href=""><img src="assets/social-links/Instagram - Negative.png" alt="link-instagram"></a>
-                        <a href=""><img src="assets/social-links/Snapchat - Negative.png" alt="link-snapchat"></a>
-                        <a href=""><img src="assets/social-links/LinkedIn - Negative.png" alt="link-linkedin"></a>
-                    </figure>
-                </div>
-
-            </aside>
-
-
+                    <nav class="socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </nav>
+                </aside>
+            </section>
         </main>
         <!--  GREEN LINE -->
         <div class="trg"></div>
         <div class="green-line-container">
             <div class="green-line"></div>
         </div>
-
         <footer>
-
             <!-- NEWS LETTER -->
             <section class="news-letter">
-                <h3>News letter</h3>
-                <form action="">
-                    <div class="inputs">
-                        <input type="text" placeholder="Nom">
-                        <input type="text" placeholder="Email">
+                <h3>Newsletter</h3>
+                <form action="" post="">
+                    <div class="inputs-text-email">
+                        <input type="text" id="Nom" placeholder="Nom">
+                        <input type="email" id="Email" placeholder="Email">
+                        <input type="submit" id="btn-news" value="S'inscrire">
                     </div>
-                    <button class="btn-news">S'inscrire</button>
                 </form>
             </section>
-            <div class="combo">
-                <!-- GALERIE  -->
-                <section class="galerie">
-                    <h3>Galerie</h3>
-                    <figure class="galerie-img">
-                        <img src="assets/galerie/galerie-1.png" alt="logo-nvidia-galerie">
-                        <img src="assets/galerie/galerie-2.png" alt="rtx2060-carte-graphique">
-                        <img src="assets/galerie/galerie-3.png" alt="rtx3080-carte-graphique">
-                        <img src="assets/galerie/galerie-4.png" alt="zotac-gaming-box">
-                    </figure>
-                </section>
-
-                <!-- PARTENAIRES -->
-                <section class="partenaires">
-                    <h3>Partenaires</h3>
+            <!-- GALERIE  -->
+            <section class="galerie">
+                <h3>Galerie</h3>
+                <figure class="galerie-img">
+                    <img src="assets/galerie/galerie-1.png" alt="logo-nvidia-galerie">
+                    <img src="assets/galerie/galerie-2.png" alt="rtx2060-carte-graphique">
+                    <img src="assets/galerie/galerie-3.png" alt="rtx3080-carte-graphique">
+                    <img src="assets/galerie/galerie-4.png" alt="zotac-gaming-box">
+                </figure>
+            </section>
+            <!-- PARTENAIRES -->
+            <section class="partenaires">
+                <h3>Partenaires</h3>
+                <nav>
                     <figure>
-                        <img src="assets/part-1.jpg" alt="intel-partenaire">
-                        <img src="assets/part-2.png" alt="asus-partenaire">
-                        <img src="assets/part-3.png" alt="ea-sport-partenaire">
+                        <a href="#" title="lien vers Intel"><img src="assets/part-1.jpg" alt="intel-partenaire"></a>
+                        <a href="#" title="lien vers Asus"><img src="assets/part-2.png" alt="asus-partenaire"></a>
+                        <a href="#" title="lien vers EaSport"><img src="assets/part-3.png"
+                                alt="ea-sport-partenaire"></a>
                     </figure>
-                </section>
-            </div>
-
+                </nav>
+            </section>
         </footer>
-
     </div>
 </body>
 
